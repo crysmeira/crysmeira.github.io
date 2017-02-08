@@ -1,31 +1,143 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		
-		<title>Index Web Page</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>This is a header</h1>
-				<p>Text here</p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li>Something more</li>
-        		<li>And more</li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en"
+  xmlns="http://www.w3.org/1999/xhtml">
+   
+<head>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+    
+    <link rel="import" href="modal_images.html">
+    
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/85104e8c1d.js"></script>
+    
+    <title>Crystiane Meira's Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand uppercase font-sansita400" href="#">Crystiane Meira</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="starter">
+        <div class="title font-sansita400">
+            Crystiane's
+            <br>
+            Portfolio
+        </div>
+    </div>
+        
+    <div class="container">
+        <div class="row first-section" id="about">
+            <h1 class="font-sansita400">About</h1>
+            
+            <p class="general-content center">I have a Bachelor degree in Computer Science, and I am very passionate about coding and solving problems. I have been using Java heavily since 2013, when I started a blog where I post solutions developed by me for algorithmic problems. Moreover, in the beginning of 2016, I created an Android app, using Java, for my personal shopping needs. I also have been taking online classes and participating in competitive contests in order to continue improving my skills.
+            <br>
+            <br>
+            <p class="general-content center">In this web page you are going to have access to some of my personal projects developed since 2016. 
+        </div>
+        
+        <div class="row" id="portfolio">
+            <h1 class="font-sansita400">Portfolio</h1>
+            
+            
+            <div class="row">
+              <div class="col-xs-6 col-md-4">
+                <a class="thumbnail fade img-project">
+                  <img src="images/shopping_list.png" alt="Shopping List App Image" onclick="ShowModal('Shopping List App','images/shopping_list.png', 'A Shopping List App for Android using Java. The app has useful functionalities, such as search, and total price estimate; and a light, but intuitive UI.', 'https://github.com/crysmeira/Shopping-List')">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <a class="thumbnail fade img-project">
+                  <img src="images/movie_catalog.png" alt="Movie Catalog Image" onclick="ShowModal('Movie Catalog','images/movie_catalog.png', 'Project to keep a catalog of movies using Spring Tool Suite, Java, Maven, Tomcat, MySQL, and Thymeleaf.', 'https://github.com/crysmeira/Movie-Catalog')">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <a class="thumbnail fade img-project">
+                  <img src="images/supernatural_quiz.png" alt="Supernatural Quiz App Image" onclick="ShowModal('Supernatural Quiz App','images/supernatural_quiz.png', 'An Android app containing a simple quiz with 10 questions about the TV serie Supernatural.', 'https://github.com/crysmeira/Quiz')">
+                </a>
+              </div>
+              <div class="col-xs-6 col-md-4">
+                <a class="thumbnail fade img-project">
+                  <img src="images/digital_library.png" alt="Digital Library Image" onclick="ShowModal('Digital Library','images/digital_library.png', 'A responsive application that allows the user to add information about a book using Spring Tool Suite, Java, Spring, H2, and Bootstrap.', 'https://github.com/crysmeira/Digital-Library')">
+                </a>
+              </div>
+            </div>
+          </div>
+    </div>    
+    
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <a class="icon" href="http://www.linkedin.com/in/crystiane-meira">
+              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="icon" href="http://www.problemasdeprogramacao.blogspot.com">
+              <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+            </a>
+            <a class="icon" href="http://www.github.com/crysmeira">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>      
+      </div>
+    </footer>
+    
+    <div class="modal bs-example-modal-lg" id="photo-md" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-size" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 id="title-md"></h4>
+            </div>
+            <div class="modal-body">
+              <img class="image-modal" id="image-md" src="image" alt="Project Image">
+              <p class="description-modal center modal-ct" id="description-md"></p>
+              <a id="link-md" href="http://github.com/crysmeira/Movie-Catalog">
+                <p class="project-link center modal-ct" id="link2-md"></p></a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->    
+    
+    <script type="text/javascript">
+        function ShowModal(header, photoAddress, description, link) {
+            $('#title-md').html(header);
+            document.getElementById('image-md').src = photoAddress;
+            document.getElementById('image-md').alt = header;
+            $('#description-md').html(description);
+            document.getElementById('link-md').href = link;
+            $('#link2-md').html(link);
+            $('#photo-md').modal('show');
+        }
+    </script>
+</body>
+
 </html>
