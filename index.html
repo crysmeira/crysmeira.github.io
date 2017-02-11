@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"
-  xmlns="http://www.w3.org/1999/xhtml">
+    xmlns="http://www.w3.org/1999/xhtml">
    
 <head>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
-    
-    <link rel="import" href="modal_images.html">
     
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -20,29 +18,27 @@
 <body>
 
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand uppercase font-sansita400" href="#">Crystiane Meira</a>
-        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand uppercase font-sansita400" href="#">Crystiane Meira</a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="starter">
+    <div class="jumbotron">
         <div class="title font-sansita400">
             Crystiane's
             <br>
@@ -65,67 +61,65 @@
             
             
             <div class="row">
-              <div class="col-xs-6 col-md-4">
-                <a class="thumbnail fade img-project">
-                  <img src="images/shopping_list.png" alt="Shopping List App Image" onclick="ShowModal('Shopping List App','images/shopping_list.png', 'A Shopping List App for Android using Java. The app has useful functionalities, such as search, and total price estimate; and a light, but intuitive UI.', 'https://github.com/crysmeira/Shopping-List')">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-4">
-                <a class="thumbnail fade img-project">
-                  <img src="images/movie_catalog.png" alt="Movie Catalog Image" onclick="ShowModal('Movie Catalog','images/movie_catalog.png', 'Project to keep a catalog of movies using Spring Tool Suite, Java, Maven, Tomcat, MySQL, and Thymeleaf.', 'https://github.com/crysmeira/Movie-Catalog')">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-4">
-                <a class="thumbnail fade img-project">
-                  <img src="images/supernatural_quiz.png" alt="Supernatural Quiz App Image" onclick="ShowModal('Supernatural Quiz App','images/supernatural_quiz.png', 'An Android app containing a simple quiz with 10 questions about the TV serie Supernatural.', 'https://github.com/crysmeira/Quiz')">
-                </a>
-              </div>
-              <div class="col-xs-6 col-md-4">
-                <a class="thumbnail fade img-project">
-                  <img src="images/digital_library.png" alt="Digital Library Image" onclick="ShowModal('Digital Library','images/digital_library.png', 'A responsive application that allows the user to add information about a book using Spring Tool Suite, Java, Spring, H2, and Bootstrap.', 'https://github.com/crysmeira/Digital-Library')">
-                </a>
-              </div>
+                <div class="col-md-4 col-xs-6">
+                    <a class="thumbnail fade img-project">
+                        <img src="images/shopping_list.png" class="img-responsive" alt="Shopping List App Image" onclick="ShowModal('Shopping List App','images/shopping_list.png', 'A Shopping List App for Android using Java. The app has useful functionalities, such as search, and total price estimate; and a light, but intuitive UI.', 'https://github.com/crysmeira/Shopping-List')">
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <a class="thumbnail fade img-project">
+                        <img src="images/movie_catalog.png" class="img-responsive" alt="Movie Catalog Image" onclick="ShowModal('Movie Catalog','images/movie_catalog.png', 'Project to keep a catalog of movies using Spring Tool Suite, Java, Maven, Tomcat, MySQL, and Thymeleaf.', 'https://github.com/crysmeira/Movie-Catalog')">
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <a class="thumbnail fade img-project">
+                        <img src="images/supernatural_quiz.png" class="img-responsive" alt="Supernatural Quiz App Image" onclick="ShowModal('Supernatural Quiz App','images/supernatural_quiz.png', 'An Android app containing a simple quiz with 10 questions about the TV serie Supernatural.', 'https://github.com/crysmeira/Quiz')">
+                    </a>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <a class="thumbnail fade img-project">
+                        <img src="images/digital_library.png" class="img-responsive" alt="Digital Library Image" onclick="ShowModal('Digital Library','images/digital_library.png', 'A responsive application that allows the user to add information about a book using Spring Tool Suite, Java, Spring, H2, and Bootstrap.', 'https://github.com/crysmeira/Digital-Library')">
+                    </a>
+                </div>
             </div>
-          </div>
+        </div>
     </div>    
     
-    <footer>
-      <div class="footer">
+    <div class="footer">
         <div class="container">
-          <div class="row">
-            <a class="icon" href="http://www.linkedin.com/in/crystiane-meira">
-              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-            </a>
-            <a class="icon" href="http://www.problemasdeprogramacao.blogspot.com">
-              <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
-            </a>
-            <a class="icon" href="http://www.github.com/crysmeira">
-              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            </a>
-          </div>
+            <div class="row">
+                <a class="icon" href="http://www.linkedin.com/in/crystiane-meira">
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="icon" href="http://www.problemasdeprogramacao.blogspot.com">
+                    <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                </a>
+                <a class="icon" href="http://www.github.com/crysmeira">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>      
-      </div>
-    </footer>
+    </div>
     
     <div class="modal bs-example-modal-lg" id="photo-md" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-size" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 id="title-md"></h4>
+        <div class="modal-dialog modal-size" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 id="title-md"></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="image-modal" id="image-md" src="" alt="Project Image">
+                    <p class="description-modal center modal-ct" id="description-md"></p>
+                    <a id="link-md" href="http://github.com/crysmeira/Movie-Catalog">
+                    <p class="project-link center modal-ct" id="link2-md"></p></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <img class="image-modal" id="image-md" src="image" alt="Project Image">
-              <p class="description-modal center modal-ct" id="description-md"></p>
-              <a id="link-md" href="http://github.com/crysmeira/Movie-Catalog">
-                <p class="project-link center modal-ct" id="link2-md"></p></a>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->    
+        </div>
+    </div>    
     
     <script type="text/javascript">
         function ShowModal(header, photoAddress, description, link) {

@@ -2,6 +2,24 @@ body {
   padding-top: 50px;
 }
 
+h1 {
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.navbar-default {
+  background-color: #f0f0f0;
+}
+
+.jumbotron {
+  background: url(../images/9di3g8owhii-jeff-sheldon_op70.png);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  text-align: center;
+}
+
 .font-sansita400 {
   font-family: 'Sansita', sans-serif;
   font-weight: 400;
@@ -11,46 +29,20 @@ body {
   text-transform: uppercase;
 }
 
-/* bkg-color: #439894 */
-.starter {
-  background-color: #c51162;
-  height: 500px;
-  text-align: center;
-}
-
 .title {
-  color: #ffffff;
+  color: #f7f7f7;
   font-weight: bold;
   font-size: 70px;
-  display: inline-block;
   padding: 130px;
-  text-shadow: 1px #aaa;
-}
-
-h1 {
-  padding-bottom: 40px;
-  padding-top: 50px;
-  text-align: center;
+  text-shadow: /*0px 0px 7px rgba(0,0,0,0.8),*/
+               0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .general-content {
-  font-size: 18px;
-  color: #727272;
-}
-
-.modal-ct {
   font-size: 16px;
   color: #727272;
-}
-
-.line-separator {
-  height: 1px;
-  width: 50%;
-  margin: auto;
-  background: #bbbbbb;
-  border-bottom: 1px solid #bcbbbb;
-  margin-bottom: 30px;
-  margin-top: 40px;
 }
 
 .img-project {
@@ -58,11 +50,6 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.project-link {
-  color: #666756;
-  margin: 0px;
 }
 
 .fade {
@@ -73,40 +60,60 @@ h1 {
   opacity: 0.5;
 }
 
+.center {
+  text-align: center;
+}
+
+
+/* modal */
+
+.modal-ct {
+  font-size: 16px;
+  color: #727272;
+}
+
 .image-modal {
   max-width: 100%;
   display: block;
   margin: auto;
 }
 
-.center {
-  text-align: center;
+.modal-size {
+  width: 900px;
 }
+
+.project-link {
+  color: #666756;
+  margin: 0px;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #727272;
+}
+
+/* footer */
 
 .footer {
   margin-top: 70px;
-  background-color: #c51162;
+  background-color: #f0f0f0;
   height: 80px;
   text-align: right;
-  color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .icon {
-  color: #ffffff;
+  color: #727272;
   padding-left: 15px;
 }
 
 .icon:visited {
-  color: #ffffff;
+  color: #727272;
 }
 
 .icon:hover {
-  color: #ffffff;
-}
-
-.modal-size {
-  width: 900px;
+  color: #000000;
 }
