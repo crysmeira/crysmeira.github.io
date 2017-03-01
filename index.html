@@ -42,9 +42,8 @@
 
     <div class="jumbotron">
         <div class="title font-sansita400">
-            Crystiane's
-            <br>
-            Portfolio
+            <p>Crystiane's</p>
+            <p>Portfolio</p>
         </div>
     </div>
         
@@ -84,6 +83,11 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <a class="thumbnail fade img-project">
                         <img src="images/visualizator_image.png" class="img-responsive" alt="Visualizator Image" onclick="ShowModal('Visualizator','images/visualizator_image.png', 'This is a redesign of a web application developed by me for a class project while I was in the university. The main purpose of this application is to present the information about the classes that a student took. This information is parsed from a XML file. (HTML / CSS / Javascript / Bootstrap)', 'https://github.com/crysmeira/Visualizator')">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail fade img-project">
+                        <img src="images/minesweeper.png" class="img-responsive" alt="Minesweeper Image" onclick="ShowModal('Minesweeper','images/minesweeper.png', 'A minesweeper game. The user has the option of choosing the mode, which can be Easy, Medium, or Hard. (HTML / CSS / Javascript / Bootstrap)', 'https://crysmeira.github.io/Minesweeper/index.html')">
                     </a>
                 </div>
             </div>
@@ -128,13 +132,13 @@
     
     <script type="text/javascript">
         function ShowModal(header, photoAddress, description, link) {
-            $('#title-md').html(header);
-            document.getElementById('image-md').src = photoAddress;
-            document.getElementById('image-md').alt = header;
-            $('#description-md').html(description);
-            document.getElementById('link-md').href = link;
-            $('#link2-md').html(link);
-            $('#photo-md').modal('show');
+            $("#title-md").html(header);
+            document.getElementById("image-md").src = photoAddress;
+            document.getElementById("image-md").alt = header;
+            $("#description-md").html(description);
+            document.getElementById("link-md").href = link;
+            $("#link2-md").html(link);
+            $("#photo-md").modal("show");
         }
     </script>
 </body>
