@@ -50,6 +50,10 @@ h1 {
   color: #727272;
 }
 
+p {
+  padding-bottom: 15px;
+}
+
 @media (max-width: 767px) {
   .img-project {
     height: 200px;
@@ -190,6 +194,10 @@ h1 {
   flex-direction: column;
 }
 
+.footer:after {
+  clear: both;
+}
+
 .icon {
   color: #727272;
   padding-left: 15px;
@@ -201,4 +209,5 @@ h1 {
 
 .icon:hover {
   color: #000000;
+  text-decoration: none;
 }
